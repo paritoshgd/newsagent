@@ -7,18 +7,18 @@ This Colab notebook demonstrates a news intelligence reader powered by the Gemin
 
 ```mermaid
 graph TD
-    A[RSS Feeds (BBC, The Verge, TechCrunch)] --> B{Python: Fetch RSS Items (feedparser)}
-    B --> C[Raw News Headlines (raw_blob)]
-    C --> D{LLM Call 1: Clean & Deduplicate (Gemini API)}
-    D --> E[Cleaned & Deduplicated Items (clean_items)]
-    E --> F{LLM Call 2: Summarize (Gemini API)}
-    F --> G[Summarized News Briefs (news_cards)]
-    G --> H{LLM Call 3: Score Urgency & Impact (Gemini API)}
-    H --> I[Scored News Items (scores)]
-    I --> J{Python: Sort & Filter Top K News (TOP_K)}
-    J --> K[Ranked Top News (top_news)]
-    K --> L{Python: Generate HTML Output}
-    L --> M[Display HTML in Notebook]
+    A["RSS Feeds (BBC, The Verge, TechCrunch)"] --> B{"Python: Fetch RSS Items (feedparser)"}
+    B --> C["Raw News Headlines (raw_blob)"]
+    C --> D{"LLM Call 1: Clean & Deduplicate (Gemini API)"}
+    D --> E["Cleaned & Deduplicated Items (clean_items)"]
+    E --> F{"LLM Call 2: Summarize (Gemini API)"}
+    F --> G["Summarized News Briefs (news_cards)"]
+    G --> H{"LLM Call 3: Score Urgency & Impact (Gemini API)"}
+    H --> I["Scored News Items (scores)"]
+    I --> J{"Python: Sort & Filter Top K News (TOP_K)"}
+    J --> K["Ranked Top News (top_news)"]
+    K --> L{"Python: Generate HTML Output"}
+    L --> M["Display HTML in Notebook"]
 ```
 
 ## Components
